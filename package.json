@@ -1,0 +1,33 @@
+{
+  "engines": {
+    "node": ">=20.6.0"
+  },
+  "name": "bible-api-experiment",
+  "version": "1.0.0",
+  "description": "Experimenting with https://scripture.api.bible",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "node --env-file=.env --watch -r ts-node/register src/index.ts",
+    "test": "export $(cat .env | xargs); node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tybenz/bible-api-experiment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tybenz/bible-api-experiment/issues"
+  },
+  "homepage": "https://github.com/tybenz/bible-api-experiment#readme",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "@types/node-fetch": "^2.6.13",
+    "node-fetch": "^3.3.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
